@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Medical Exam Preparation Resources | YOUR BRAND</title>
+  <meta name="description" content="Access exam preparation resources, question banks, books, videos, and clinical references for medical students and healthcare professionals.">
+  <meta property="og:title" content="Medical Exam Preparation Resources | YOUR BRAND">
+  <meta property="og:description" content="Exam-focused medical learning resources with flexible access plans and direct support.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="images/logo.png">
+  <meta name="twitter:card" content="summary">
+  <link rel="icon" href="images/logo.png" type="image/png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <script>
+    (function () {
+      try {
+        var saved = localStorage.getItem("medaccess-theme");
+        var theme = saved || (window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light");
+        if (theme === "dark") document.documentElement.setAttribute("data-theme", "dark");
+      } catch (e) {}
+    })();
+  </script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <div class="container nav">
+      <a class="nav__brand" href="index.html">
+        <img class="nav__logo" src="images/logo.png" width="40" height="40" alt="MedAccess logo">
+        <span data-brand>MedAccess</span>
+      </a>
+
+      <div class="nav__backdrop" data-nav-backdrop></div>
+
+      <nav id="primary-menu" class="nav__menu" aria-label="Primary">
+        <a class="nav__link is-active" href="index.html">Home</a>
+        <a class="nav__link" href="resources.html">Resources</a>
+        <a class="nav__link" href="exams.html">Exams</a>
+        <a class="nav__link" href="features.html">Features</a>
+        <a class="nav__link" href="pricing.html">Pricing</a>
+        <a class="nav__link" href="faq.html">FAQ</a>
+        <a class="nav__cta btn btn--primary" href="#" data-open-access>Get Access</a>
+      </nav>
+
+      <div class="nav__actions">
+        <button type="button" class="theme-toggle" data-theme-toggle aria-label="Switch to night view" title="Night view">
+          <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"/></svg>
+          <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/></svg>
+        </button>
+        <button class="nav__toggle" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="primary-menu">
+          <span class="nav__toggle-icon" aria-hidden="true">
+            <span></span><span></span><span></span>
+          </span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- Hero -->
+    <section class="hero">
+      <div class="container hero__grid">
+        <div class="hero__content">
+          <h1 class="hero__title">Your Medical Exam Preparation Resources. All in One Place.</h1>
+          <p class="hero__text">Access exam preparation resources, question banks, books, videos and clinical references designed to support your medical studies.</p>
+          <div class="btn-group">
+            <a class="btn btn--primary btn--lg" href="resources.html">Browse Resources</a>
+            <a class="btn btn--secondary btn--lg" href="#" data-open-access>Get Access</a>
+          </div>
+          <ul class="hero__trust">
+            <li class="hero__trust-item">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M20 6L9 17l-5-5"/></svg>
+              Multiple Exam Categories
+            </li>
+            <li class="hero__trust-item">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M20 6L9 17l-5-5"/></svg>
+              Flexible Access Plans
+            </li>
+            <li class="hero__trust-item">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M20 6L9 17l-5-5"/></svg>
+              Direct Support
+            </li>
+          </ul>
+        </div>
+
+        <div class="hero__visual">
+          <div class="hero__glow" aria-hidden="true"></div>
+          <figure class="hero__photo">
+            <img
+              src="images/hero-doctor.png"
+              alt="Medical professional holding a tablet, representing modern exam preparation resources"
+              width="640"
+              height="800"
+              loading="eager"
+              decoding="async"
+            >
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- Highlights -->
+    <section class="highlights" aria-label="Platform highlights">
+      <div class="container">
+        <div class="highlights__grid">
+          <div class="highlight-item">
+            <div class="highlight-item__icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M4 6h16M4 12h16M4 18h10"/></svg>
+            </div>
+            <h2 class="highlight-item__title">Multiple Exam Categories</h2>
+            <p class="highlight-item__text">USMLE, PLAB, AMC, MCCQE, MRCP &amp; more</p>
+          </div>
+          <div class="highlight-item">
+            <div class="highlight-item__icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"/></svg>
+            </div>
+            <h2 class="highlight-item__title">Exam-Focused Resources</h2>
+            <p class="highlight-item__text">Materials organized for serious study</p>
+          </div>
+          <div class="highlight-item">
+            <div class="highlight-item__icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"/></svg>
+            </div>
+            <h2 class="highlight-item__title">Flexible Access</h2>
+            <p class="highlight-item__text">6-month, 1-year, and 2-year plans</p>
+          </div>
+          <div class="highlight-item">
+            <div class="highlight-item__icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z"/></svg>
+            </div>
+            <h2 class="highlight-item__title">Direct Support</h2>
+            <p class="highlight-item__text">Reach us via WhatsApp, Telegram, or email</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- What you get -->
+    <section class="section" id="features">
+      <div class="container">
+        <div class="section__header">
+          <span class="section__eyebrow">What You Get</span>
+          <h2 class="section__title">Everything you need for focused exam preparation</h2>
+          <p class="section__desc">A curated library of study resources designed for medical students and healthcare professionals.</p>
+        </div>
+        <div class="feature-grid">
+          <article class="card">
+            <div class="card__icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-6 9l2 2 4-4"/></svg>
+            </div>
+            <h3 class="card__title">Question Banks</h3>
+            <p class="card__text">Practice with exam-oriented questions that reinforce clinical reasoning and recall.</p>
+          </article>
+          <article class="card">
+            <div class="card__icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M4 19.5A2.5 2.5 0 016.5 17H20M4 19.5A2.5 2.5 0 004 17V5.5A2.5 2.5 0 016.5 3H20v14H6.5A2.5 2.5 0 004 19.5z"/></svg>
+            </div>
+            <h3 class="card__title">Books &amp; References</h3>
+            <p class="card__text">Access curated study notes and reference materials to support structured revision.</p>
+          </article>
+          <article class="card">
+            <div class="card__icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M14.752 11.168l-3.197-2.132A1 1 0 0010 9.87v4.263a1 1 0 001.555.832l3.197-2.132a1 1 0 000-1.664z"/><path d="M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+            </div>
+            <h3 class="card__title">Video Lectures</h3>
+            <p class="card__text">Review key topics through clear video explanations and clinical walkthroughs.</p>
+          </article>
+          <article class="card">
+            <div class="card__icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"/></svg>
+            </div>
+            <h3 class="card__title">Clinical Resources</h3>
+            <p class="card__text">Use practical clinical references to connect exam knowledge with real-world care.</p>
+          </article>
+          <article class="card">
+            <div class="card__icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M3 7v10a2 2 0 002 2h14a2 2 0 002-2V9a2 2 0 00-2-2h-6l-2-2H5a2 2 0 00-2 2z"/></svg>
+            </div>
+            <h3 class="card__title">Organized Resource Library</h3>
+            <p class="card__text">Find what you need quickly with categories, filters, and a clear resource structure.</p>
+          </article>
+          <article class="card">
+            <div class="card__icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>
+            </div>
+            <h3 class="card__title">Multi-Device Access</h3>
+            <p class="card__text">Study on the devices you already use — desktop, tablet, or phone.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Exam categories -->
+    <section class="section section--alt" id="exams">
+      <div class="container">
+        <div class="section__header">
+          <span class="section__eyebrow">Exam Categories</span>
+          <h2 class="section__title">Prepare for the exams that matter to you</h2>
+          <p class="section__desc">Browse resources organized around major medical licensing and specialty pathways.</p>
+        </div>
+        <div class="exam-grid">
+          <article class="card exam-card">
+            <span class="exam-card__badge">EXAM</span>
+            <h3 class="exam-card__title">USMLE</h3>
+            <p class="card__text">Step-oriented resources including question banks, reviews, and study references.</p>
+            <a class="card__link" href="resources.html?category=USMLE">Explore Resources <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+          </article>
+          <article class="card exam-card">
+            <span class="exam-card__badge">EXAM</span>
+            <h3 class="exam-card__title">PLAB</h3>
+            <p class="card__text">Clinical scenario practice and learning materials aligned with PLAB preparation.</p>
+            <a class="card__link" href="resources.html?category=PLAB">Explore Resources <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+          </article>
+          <article class="card exam-card">
+            <span class="exam-card__badge">EXAM</span>
+            <h3 class="exam-card__title">AMC</h3>
+            <p class="card__text">Study companions and practice resources to support AMC exam pathways.</p>
+            <a class="card__link" href="resources.html?category=AMC">Explore Resources <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+          </article>
+          <article class="card exam-card">
+            <span class="exam-card__badge">EXAM</span>
+            <h3 class="exam-card__title">MCCQE</h3>
+            <p class="card__text">Clinical reasoning practice and topic reviews for MCCQE-focused study.</p>
+            <a class="card__link" href="resources.html?category=MCCQE">Explore Resources <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+          </article>
+          <article class="card exam-card">
+            <span class="exam-card__badge">EXAM</span>
+            <h3 class="exam-card__title">MRCP</h3>
+            <p class="card__text">Specialty-oriented references and practice materials for MRCP preparation.</p>
+            <a class="card__link" href="resources.html?category=MRCP">Explore Resources <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+          </article>
+          <article class="card exam-card">
+            <span class="exam-card__badge">LIBRARY</span>
+            <h3 class="exam-card__title">Clinical Resources</h3>
+            <p class="card__text">Guidelines, quick references, and clinical skill materials for everyday learning.</p>
+            <a class="card__link" href="resources.html?category=Clinical">Explore Resources <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- How it works -->
+    <section class="section" id="how-it-works">
+      <div class="container">
+        <div class="section__header">
+          <span class="section__eyebrow">How It Works</span>
+          <h2 class="section__title">Simple steps to get started</h2>
+          <p class="section__desc">There is no online checkout. Access is arranged personally after you contact us.</p>
+        </div>
+        <div class="steps">
+          <div class="step">
+            <div class="step__number">01</div>
+            <h3 class="step__title">Choose Your Plan</h3>
+            <p class="step__text">Select a 6-month, 1-year, or 2-year access duration that fits your study timeline.</p>
+          </div>
+          <div class="step">
+            <div class="step__number">02</div>
+            <h3 class="step__title">Contact Us</h3>
+            <p class="step__text">Reach out on WhatsApp, Telegram, or email with the plan you want.</p>
+          </div>
+          <div class="step">
+            <div class="step__number">03</div>
+            <h3 class="step__title">Complete Payment</h3>
+            <p class="step__text">We will share payment instructions. Payment is arranged manually through direct communication.</p>
+          </div>
+          <div class="step">
+            <div class="step__number">04</div>
+            <h3 class="step__title">Receive Access</h3>
+            <p class="step__text">Once payment is confirmed, you receive your access details from us.</p>
+          </div>
+        </div>
+        <p class="steps-note">Payment is handled manually. This website does not process payments online.</p>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="section section--tight">
+      <div class="container">
+        <div class="cta-band">
+          <h2 class="cta-band__title">Ready to strengthen your exam preparation?</h2>
+          <p class="cta-band__text">Browse the resource library or contact us to arrange access to a plan that fits your needs.</p>
+          <div class="btn-group" style="justify-content:center;">
+            <a class="btn btn--primary btn--lg" href="resources.html">Browse Resources</a>
+            <a class="btn btn--secondary btn--lg" href="#" data-open-access>Get Access</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer__grid">
+        <div>
+          <a class="footer__brand" href="index.html">
+            <img class="footer__logo" src="images/logo.png" width="36" height="36" alt="">
+            <span data-brand>MedAccess</span>
+          </a>
+          <p class="footer__desc">A medical education resource platform helping students and professionals prepare for major exams with curated learning materials.</p>
+        </div>
+        <div>
+          <h3 class="footer__heading">Navigation</h3>
+          <ul class="footer__links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="resources.html">Resources</a></li>
+            <li><a href="exams.html">Exams</a></li>
+            <li><a href="features.html">Features</a></li>
+            <li><a href="pricing.html">Pricing</a></li>
+            <li><a href="faq.html">FAQ</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3 class="footer__heading">Contact</h3>
+          <ul class="footer__links">
+            <li><a href="#" data-contact="whatsapp" target="_blank" rel="noopener noreferrer">WhatsApp</a></li>
+            <li><a href="#" data-contact="telegram" target="_blank" rel="noopener noreferrer">Telegram</a></li>
+            <li><a href="#" data-contact="email">Email</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3 class="footer__heading">Legal</h3>
+          <ul class="footer__links">
+            <li><a href="privacy.html">Privacy Policy</a></li>
+            <li><a href="terms.html">Terms of Use</a></li>
+            <li><a href="refund.html">Refund Policy</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <p>&copy; 2026 <span data-brand>MedAccess</span>. All rights reserved.</p>
+        <p>Independent medical education resource platform.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Access modal -->
+  <div id="access-modal" class="modal" role="dialog" aria-modal="true" aria-labelledby="modal-title" aria-hidden="true">
+    <div class="modal__backdrop" data-close-modal></div>
+    <div class="modal__dialog">
+      <button type="button" class="modal__close" data-close-modal aria-label="Close dialog">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg>
+      </button>
+      <h2 id="modal-title" class="modal__title">Ready to Get Access?</h2>
+      <p class="modal__text">Choose your preferred way to contact us. Payment is arranged manually after we connect.</p>
+      <p id="modal-plan-label" class="modal__plan"></p>
+      <div class="modal__options">
+        <a id="modal-whatsapp" class="modal__option" href="#" target="_blank" rel="noopener noreferrer">
+          <span class="modal__option-icon modal__option-icon--whatsapp">
+            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.435 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+          </span>
+          <span>
+            <strong>WhatsApp</strong>
+            <span>Message us to request access</span>
+          </span>
+        </a>
+        <a id="modal-telegram" class="modal__option" href="#" target="_blank" rel="noopener noreferrer">
+          <span class="modal__option-icon modal__option-icon--telegram">
+            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M11.944 0A12 12 0 000 12a12 12 0 0012 12 12 12 0 0012-12A12 12 0 0012 0a12 12 0 00-.056 0zm4.962 7.224c.1-.002.321.023.465.14a.506.506 0 01.171.325c.016.093.036.306.02.472-.18 1.898-.962 6.502-1.36 8.627-.168.9-.499 1.201-.82 1.23-.696.065-1.225-.46-1.9-.902-1.056-.693-1.653-1.124-2.678-1.8-1.185-.78-.417-1.21.258-1.91.177-.184 3.247-2.977 3.307-3.23.007-.032.014-.15-.056-.212s-.174-.041-.249-.024c-.106.024-1.793 1.14-5.061 3.345-.48.33-.913.49-1.302.48-.428-.008-1.252-.241-1.865-.44-.752-.245-1.349-.374-1.297-.789.027-.216.325-.437.893-.663 3.498-1.524 5.83-2.529 6.998-3.014 3.332-1.386 4.025-1.627 4.476-1.635z"/></svg>
+          </span>
+          <span>
+            <strong>Telegram</strong>
+            <span>Chat with us on Telegram</span>
+          </span>
+        </a>
+        <a id="modal-email" class="modal__option" href="#">
+          <span class="modal__option-icon modal__option-icon--email">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>
+          </span>
+          <span>
+            <strong>Email</strong>
+            <span>Send an access request by email</span>
+          </span>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

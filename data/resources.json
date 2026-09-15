@@ -1,0 +1,124 @@
+{
+  "resources": [
+    {
+      "id": "usmle-qb-1",
+      "title": "USMLE Step Foundations Question Bank",
+      "category": "USMLE",
+      "type": "Question Banks",
+      "description": "Exam-style practice questions covering core systems and clinical reasoning for Step preparation.",
+      "tags": ["USMLE", "Question Banks"]
+    },
+    {
+      "id": "usmle-books-1",
+      "title": "USMLE High-Yield Review Notes",
+      "category": "USMLE",
+      "type": "Books",
+      "description": "Concise review notes organized by organ system to support focused exam study sessions.",
+      "tags": ["USMLE", "Books"]
+    },
+    {
+      "id": "plab-qb-1",
+      "title": "PLAB Practice Question Set",
+      "category": "PLAB",
+      "type": "Question Banks",
+      "description": "Scenario-based questions aligned with PLAB-style clinical decision making.",
+      "tags": ["PLAB", "Question Banks"]
+    },
+    {
+      "id": "plab-videos-1",
+      "title": "PLAB Clinical Scenarios Video Series",
+      "category": "PLAB",
+      "type": "Videos",
+      "description": "Video walkthroughs of common PLAB clinical presentations and management approaches.",
+      "tags": ["PLAB", "Videos"]
+    },
+    {
+      "id": "amc-books-1",
+      "title": "AMC Exam Study Companion",
+      "category": "AMC",
+      "type": "Books",
+      "description": "Structured reference material designed to support AMC exam preparation pathways.",
+      "tags": ["AMC", "Books"]
+    },
+    {
+      "id": "amc-qb-1",
+      "title": "AMC Practice Questions Pack",
+      "category": "AMC",
+      "type": "Question Banks",
+      "description": "Practice items covering key clinical topics relevant to AMC exam preparation.",
+      "tags": ["AMC", "Question Banks"]
+    },
+    {
+      "id": "mccqe-qb-1",
+      "title": "MCCQE Clinical Reasoning Bank",
+      "category": "MCCQE",
+      "type": "Question Banks",
+      "description": "Practice questions focused on clinical reasoning patterns useful for MCCQE study.",
+      "tags": ["MCCQE", "Question Banks"]
+    },
+    {
+      "id": "mccqe-videos-1",
+      "title": "MCCQE Topic Review Lectures",
+      "category": "MCCQE",
+      "type": "Videos",
+      "description": "Lecture-style video reviews covering high-priority MCCQE topic areas.",
+      "tags": ["MCCQE", "Videos"]
+    },
+    {
+      "id": "mrcp-books-1",
+      "title": "MRCP Specialty Reference Pack",
+      "category": "MRCP",
+      "type": "Books",
+      "description": "Curated reference materials supporting MRCP-oriented specialty review.",
+      "tags": ["MRCP", "Books"]
+    },
+    {
+      "id": "mrcp-qb-1",
+      "title": "MRCP Practice Question Collection",
+      "category": "MRCP",
+      "type": "Question Banks",
+      "description": "Exam-oriented practice questions for MRCP preparation workflows.",
+      "tags": ["MRCP", "Question Banks"]
+    },
+    {
+      "id": "clinical-ref-1",
+      "title": "Clinical Guidelines Quick Reference",
+      "category": "Clinical",
+      "type": "Clinical Resources",
+      "description": "Condensed clinical references for common conditions and bedside decision support.",
+      "tags": ["Clinical"]
+    },
+    {
+      "id": "clinical-videos-1",
+      "title": "Clinical Skills Demonstration Videos",
+      "category": "Clinical",
+      "type": "Videos",
+      "description": "Practical clinical skill demonstrations to reinforce bedside learning.",
+      "tags": ["Clinical", "Videos"]
+    },
+    {
+      "id": "books-pharm-1",
+      "title": "Pharmacology Essentials Handbook",
+      "category": "Books",
+      "type": "Books",
+      "description": "A compact pharmacology handbook for rapid revision of drug classes and mechanisms.",
+      "tags": ["Books"]
+    },
+    {
+      "id": "videos-path-1",
+      "title": "Pathology Concepts Explained",
+      "category": "Videos",
+      "type": "Videos",
+      "description": "Clear video explanations of foundational pathology concepts for exam revision.",
+      "tags": ["Videos"]
+    },
+    {
+      "id": "qb-mixed-1",
+      "title": "Mixed Specialties Drill Pack",
+      "category": "Question Banks",
+      "type": "Question Banks",
+      "description": "Cross-specialty question drills to strengthen broad clinical knowledge.",
+      "tags": ["Question Banks"]
+    }
+  ]
+}
