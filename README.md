@@ -79,9 +79,9 @@ Edit `PRICES` in `js/main.js`:
 
 ```js
 PRICES: {
-  sixMonths: "$XX",
-  oneYear: "$XX",
-  twoYears: "$XX"
+  sixMonths: "$50",
+  oneYear: "$75",
+  twoYears: "$150"
 }
 ```
 

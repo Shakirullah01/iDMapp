@@ -16,8 +16,8 @@ const SITE_CONFIG = {
   /* Pricing display — change these strings anytime */
   PRICES: {
     sixMonths: "$50",
-    oneYear: "$100",
-    twoYears: "$200"
+    oneYear: "$75",
+    twoYears: "$150"
   },
 
   /* Plan labels used in contact messages */
@@ -33,10 +33,11 @@ const SITE_CONFIG = {
    ============================================ */
 
 function getWhatsAppUrl(planLabel) {
-  const number = SITE_CONFIG.WHATSAPP_NUMBER;
-  let message = "Hello, I would like to get access to the medical resource platform.";
+  const number = SITE_CONFIG.WHATSAPP_NUMBER.replace(/\D/g, "");
+  let message = "Hello, I would like to get access to iMD app";
   if (planLabel) {
-    message = `Hello, I would like to get access to the ${planLabel} plan.`;
+    const planKey = Object.keys(SITE_CONFIG.PLANS).find((key) => SITE_CONFIG.PLANS[key] === planLabel);
+    message = `Hello, I would like to get access to iMD app.\nPlan: ${planLabel} — ${planKey ? SITE_CONFIG.PRICES[planKey] : ""}`;
   }
   return `https://wa.me/${number}?text=${encodeURIComponent(message)}`;
 }
@@ -114,7 +115,13 @@ function updateModalLinks(planLabel) {
 
 function initAccessModal() {
   const modal = document.getElementById("access-modal");
-  if (!modal) return;
+  if (!modal) {
+    document.querySelectorAll("[data-open-access]").forEach((el) => {
+      el.removeAttribute("data-open-access");
+      el.setAttribute("href", "pricing.html");
+    });
+    return;
+  }
 
   document.querySelectorAll("[data-open-access]").forEach((el) => {
     el.addEventListener("click", (e) => {
@@ -218,6 +225,51 @@ function applyPrices() {
   });
   document.querySelectorAll("[data-price='twoYears']").forEach((el) => {
     el.textContent = SITE_CONFIG.PRICES.twoYears;
+  });
+}
+
+function initFloatingWhatsApp() {
+  if (document.querySelector(".whatsapp-float")) return;
+
+  const link = document.createElement("a");
+  link.className = "whatsapp-float";
+  link.href = getWhatsAppUrl();
+  link.target = "_blank";
+  link.rel = "noopener noreferrer";
+  link.setAttribute("aria-label", "Contact us on WhatsApp");
+  link.title = "Contact us on WhatsApp";
+  link.innerHTML = '<span class="whatsapp-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.198.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.435 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg></span><span class="whatsapp-label">Get Access</span><span class="whatsapp-ripple whatsapp-ripple--one" aria-hidden="true"></span><span class="whatsapp-ripple whatsapp-ripple--two" aria-hidden="true"></span><span class="whatsapp-ripple whatsapp-ripple--three" aria-hidden="true"></span>';
+  link.innerHTML = '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.435 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>';
+  document.body.appendChild(link);
+}
+
+function initUtilityNavigation() {
+  document.querySelectorAll(".nav__menu").forEach((menu) => {
+    const cta = menu.querySelector("[data-open-access]");
+    if (!menu.querySelector('a[href="download.html"]')) {
+      const download = document.createElement("a");
+      download.className = "nav__link";
+      download.href = "download.html";
+      download.textContent = "Download";
+      menu.insertBefore(download, cta || null);
+    }
+    if (!menu.querySelector('a[href="login.html"]')) {
+      const login = document.createElement("a");
+      login.className = "nav__link nav__link--login";
+      login.href = "login.html";
+      login.textContent = "Log in";
+      menu.insertBefore(login, cta || null);
+    }
+    if (!menu.querySelector('[data-nav-contact]')) {
+      const contact = document.createElement("a");
+      contact.className = "nav__link nav__link--contact";
+      contact.href = getWhatsAppUrl();
+      contact.target = "_blank";
+      contact.rel = "noopener noreferrer";
+      contact.textContent = "WhatsApp";
+      contact.setAttribute("data-nav-contact", "true");
+      menu.insertBefore(contact, cta || null);
+    }
   });
 }
 
@@ -425,8 +477,10 @@ function initThemeToggle() {
 document.addEventListener("DOMContentLoaded", () => {
   applyBrandName();
   applyContactLinks();
+  initFloatingWhatsApp();
   applyPrices();
   initThemeToggle();
+  initUtilityNavigation();
   initMobileNav();
   initAccessModal();
   initFaq();
