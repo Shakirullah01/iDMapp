@@ -2259,3 +2259,32 @@ body.modal-open {
   .nav__link { padding-left: .5rem; padding-right: .5rem; }
   .nav__cta { margin-left: .25rem; padding-left: .9rem; padding-right: .9rem; }
 }
+
+.telegram-float {
+  position: fixed;
+  right: clamp(1rem, 3vw, 1.5rem);
+  bottom: calc(5.25rem + env(safe-area-inset-bottom));
+  z-index: 150;
+  display: inline-flex;
+  align-items: center;
+  gap: .55rem;
+  padding: .7rem 1rem;
+  border-radius: 999px;
+  background: #229ed9;
+  color: #fff;
+  font-weight: 700;
+  text-decoration: none;
+  box-shadow: 0 .5rem 1.25rem rgba(15, 23, 42, .2);
+  transition: transform .2s ease, box-shadow .2s ease, background .2s ease;
+}
+.telegram-float svg { width: 1.4rem; height: 1.4rem; fill: currentColor; }
+.telegram-float:hover, .telegram-float:focus-visible {
+  background: #168ac4;
+  color: #fff;
+  transform: translateY(-2px);
+  box-shadow: 0 .75rem 1.5rem rgba(15, 23, 42, .25);
+}
+.telegram-float:focus-visible { outline: 3px solid #93c5fd; outline-offset: 3px; }
+@media (max-width: 768px) {
+  .telegram-float { right: 1rem; bottom: calc(4.75rem + env(safe-area-inset-bottom)); padding: .6rem .85rem; }
+}
