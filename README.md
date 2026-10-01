@@ -1,4 +1,4 @@
-# MedAccess — Medical Education Marketing Website
+# iMD Medical Resources — Medical Education Website
 
 Static marketing and lead-generation website for a medical exam preparation resource platform.
 
@@ -41,9 +41,9 @@ website/
 ├── pricing.html        Access plans
 ├── faq.html            FAQ
 ├── contact.html        Contact channels
-├── privacy.html        Privacy placeholder
-├── terms.html          Terms placeholder
-├── refund.html         Refund placeholder
+├── privacy.html        Privacy policy
+├── terms.html          Terms of use
+├── refund.html         Refund policy
 ├── css/style.css       Design system & layout
 ├── js/main.js          Config + interactivity
 ├── data/resources.json Resource catalog
@@ -137,7 +137,7 @@ Point the host’s publish directory at the folder that contains `index.html`.
 
 ## Notes
 
-- Placeholder brand name is **MedAccess** — change it before launch.
-- Legal pages are stubs — replace with real policies.
-- Resource data is sample content for development.
+- Brand, support channels, and displayed plan prices are configured in `js/main.js` (`SITE_CONFIG`).
+- The privacy, terms, and refund pages describe the site's current static browsing and manually arranged access process.
+- Resource titles, categories, and descriptions are maintained in `data/resources.json`; keep that catalog aligned with currently available materials.
 - This site is an independent project and is not affiliated with any third-party brand.

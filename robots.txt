@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://imdapp.org/sitemap.xml
+Sitemap: https://www.imdapp.org/sitemap.xml

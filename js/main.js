@@ -1,17 +1,17 @@
 /* ============================================
-   MedAccess — Main JavaScript
+   iMD Medical Resources — Main JavaScript
    ============================================
-   EDIT THESE VALUES before going live:
+   Update the configuration below when site details change.
    ============================================ */
 
 const SITE_CONFIG = {
   /* Brand name shown in footer copyright & dynamic spots */
   BRAND_NAME: "iMD Medical Resources",
 
-  /* Contact channels — replace placeholders with your real details */
-  WHATSAPP_NUMBER: "+923135025985",       // e.g. "1234567890" (country code, no + or spaces)
-  TELEGRAM_USERNAME: "iMDapp_official",   // e.g. "yourusername" (without @)
-  CONTACT_EMAIL: "info@imedicaldoctor.com",          // e.g. "hello@yourdomain.com"
+  /* Configured support channels used by site contact links */
+  WHATSAPP_NUMBER: "+923135025985",
+  TELEGRAM_USERNAME: "iMDapp_official",
+  CONTACT_EMAIL: "info@imedicaldoctor.com",
 
   /* Pricing display — change these strings anytime */
   PRICES: {

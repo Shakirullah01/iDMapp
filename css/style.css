@@ -73,6 +73,7 @@
 .download-card h2 { margin: 0; font-size: 1.25rem; }
 .download-card p { flex: 1; margin: 0; }
 .steps-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 1.25rem; }
+.download-steps { margin: 0; padding: 0; list-style: none; }
 .step-card { padding: 1.5rem; border: 1px solid var(--color-border); border-radius: 1rem; background: var(--color-white); }
 .step-card > span { color: var(--color-primary); font-weight: 800; }
 .step-card h3 { margin: .75rem 0 .5rem; }
@@ -1240,6 +1241,8 @@ main {
   border-radius: var(--radius-md);
   overflow: hidden;
 }
+
+.faq-item__heading { margin: 0; }
 
 .faq-item__question {
   width: 100%;
