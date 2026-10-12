@@ -2,66 +2,74 @@
   "resources": [
     {
       "id": "usmle-qb-1",
-      "title": "USMLE Step Foundations Question Bank",
+      "title": "USMLE Step 1, Step 2 CK & Step 3 Question Banks",
       "category": "USMLE",
       "type": "Question Banks",
-      "description": "Exam-style practice questions covering core systems and clinical reasoning for Step preparation.",
+      "description": "Exam-style USMLE QBanks with detailed explanations covering basic sciences, clinical knowledge and clinical reasoning for every Step.",
       "tags": ["USMLE", "Question Banks"]
     },
     {
       "id": "usmle-books-1",
-      "title": "USMLE High-Yield Review Notes",
+      "title": "USMLE High-Yield Review Books & Notes",
       "category": "USMLE",
       "type": "Books",
-      "description": "Concise review notes organized by organ system to support focused exam study sessions.",
+      "description": "Concise USMLE review books and high-yield notes organized by organ system for focused Step 1 and Step 2 CK revision.",
       "tags": ["USMLE", "Books"]
     },
     {
+      "id": "usmle-videos-1",
+      "title": "USMLE Video Lecture Series",
+      "category": "USMLE",
+      "type": "Videos",
+      "description": "High-yield video lectures for USMLE basic sciences and clinical topics, ideal for visual learners preparing for Step 1 and Step 2 CK.",
+      "tags": ["USMLE", "Videos"]
+    },
+    {
       "id": "plab-qb-1",
-      "title": "PLAB Practice Question Set",
+      "title": "PLAB 1 Question Bank (UKMLA)",
       "category": "PLAB",
       "type": "Question Banks",
-      "description": "Scenario-based questions aligned with PLAB-style clinical decision making.",
+      "description": "Single-best-answer PLAB 1 practice questions mapped to the UKMLA content map, with UK guideline-based explanations.",
       "tags": ["PLAB", "Question Banks"]
     },
     {
       "id": "plab-videos-1",
-      "title": "PLAB Clinical Scenarios Video Series",
+      "title": "PLAB 2 Clinical Scenarios & OSCE Videos",
       "category": "PLAB",
       "type": "Videos",
-      "description": "Video walkthroughs of common PLAB clinical presentations and management approaches.",
+      "description": "Video walkthroughs of common PLAB 2 OSCE stations, clinical presentations and management approaches.",
       "tags": ["PLAB", "Videos"]
     },
     {
       "id": "amc-books-1",
-      "title": "AMC Exam Study Companion",
+      "title": "AMC Exam Study Companion & Therapeutic References",
       "category": "AMC",
       "type": "Books",
-      "description": "Structured reference material designed to support AMC exam preparation pathways.",
+      "description": "Structured reference material and Australian therapeutic guidance to support AMC MCQ and Clinical exam preparation.",
       "tags": ["AMC", "Books"]
     },
     {
       "id": "amc-qb-1",
-      "title": "AMC Practice Questions Pack",
+      "title": "AMC MCQ Practice Question Bank",
       "category": "AMC",
       "type": "Question Banks",
-      "description": "Practice items covering key clinical topics relevant to AMC exam preparation.",
+      "description": "AMC-style multiple-choice practice questions covering the key clinical topics tested in the Australian Medical Council MCQ exam.",
       "tags": ["AMC", "Question Banks"]
     },
     {
       "id": "mccqe-qb-1",
-      "title": "MCCQE Clinical Reasoning Bank",
+      "title": "MCCQE Part 1 Question Bank & CDM Cases",
       "category": "MCCQE",
       "type": "Question Banks",
-      "description": "Practice questions focused on clinical reasoning patterns useful for MCCQE study.",
+      "description": "Canadian-focused MCCQE Part 1 practice questions and clinical decision-making cases built around Medical Council of Canada objectives.",
       "tags": ["MCCQE", "Question Banks"]
     },
     {
       "id": "mccqe-videos-1",
-      "title": "MCCQE Topic Review Lectures",
+      "title": "MCCQE & NAC OSCE Topic Review Lectures",
       "category": "MCCQE",
       "type": "Videos",
-      "description": "Lecture-style video reviews covering high-priority MCCQE topic areas.",
+      "description": "Lecture-style video reviews covering high-priority MCCQE Part 1 topics and NAC OSCE station preparation.",
       "tags": ["MCCQE", "Videos"]
     },
     {
@@ -69,23 +77,31 @@
       "title": "MRCP Specialty Reference Pack",
       "category": "MRCP",
       "type": "Books",
-      "description": "Curated reference materials supporting MRCP-oriented specialty review.",
+      "description": "Curated internal medicine references and guideline summaries supporting MRCP(UK) Part 1 and Part 2 revision.",
       "tags": ["MRCP", "Books"]
     },
     {
       "id": "mrcp-qb-1",
-      "title": "MRCP Practice Question Collection",
+      "title": "MRCP Part 1 & Part 2 Question Bank",
       "category": "MRCP",
       "type": "Question Banks",
-      "description": "Exam-oriented practice questions for MRCP preparation workflows.",
+      "description": "Exam-oriented MRCP practice questions with explanations for the Part 1 and Part 2 written papers.",
       "tags": ["MRCP", "Question Banks"]
     },
     {
       "id": "clinical-ref-1",
-      "title": "Clinical Guidelines Quick Reference",
+      "title": "Clinical Guidelines & Point-of-Care References",
       "category": "Clinical",
       "type": "Clinical Resources",
-      "description": "Condensed clinical references for common conditions and bedside decision support.",
+      "description": "Condensed clinical references and guidelines for common conditions, used for bedside decision support and exam management questions.",
+      "tags": ["Clinical"]
+    },
+    {
+      "id": "clinical-drugs-1",
+      "title": "Drug Information & Interaction References",
+      "category": "Clinical",
+      "type": "Clinical Resources",
+      "description": "Drug references covering dosing, interactions and therapeutics for prescribing on the wards and in pharmacology revision.",
       "tags": ["Clinical"]
     },
     {
@@ -93,7 +109,7 @@
       "title": "Clinical Skills Demonstration Videos",
       "category": "Clinical",
       "type": "Videos",
-      "description": "Practical clinical skill demonstrations to reinforce bedside learning.",
+      "description": "Practical clinical skill and examination demonstrations to reinforce bedside learning and OSCE preparation.",
       "tags": ["Clinical", "Videos"]
     },
     {
@@ -101,7 +117,7 @@
       "title": "Pharmacology Essentials Handbook",
       "category": "Books",
       "type": "Books",
-      "description": "A compact pharmacology handbook for rapid revision of drug classes and mechanisms.",
+      "description": "A compact pharmacology handbook for rapid revision of drug classes, mechanisms and adverse effects.",
       "tags": ["Books"]
     },
     {
@@ -109,15 +125,15 @@
       "title": "Pathology Concepts Explained",
       "category": "Videos",
       "type": "Videos",
-      "description": "Clear video explanations of foundational pathology concepts for exam revision.",
+      "description": "Clear video explanations of foundational pathology concepts for USMLE Step 1 and preclinical exam revision.",
       "tags": ["Videos"]
     },
     {
       "id": "qb-mixed-1",
-      "title": "Mixed Specialties Drill Pack",
+      "title": "Mixed Specialties Drill Question Pack",
       "category": "Question Banks",
       "type": "Question Banks",
-      "description": "Cross-specialty question drills to strengthen broad clinical knowledge.",
+      "description": "Cross-specialty question drills in internal medicine, surgery, paediatrics, obstetrics and psychiatry to strengthen broad clinical knowledge.",
       "tags": ["Question Banks"]
     }
   ]

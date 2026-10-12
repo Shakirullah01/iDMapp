@@ -3,13 +3,27 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>iMD Resources | Medical Study Library</title>
-  <meta name="description" content="Browse iMD's medical resource library, with materials for USMLE, PLAB, AMC, MCCQE, MRCP, and clinical study.">
-  <meta name="robots" content="index, follow">
-  <meta property="og:title" content="iMD Resources | Medical Study Library">
-  <meta property="og:description" content="Browse iMD's medical resource library, with materials for USMLE, PLAB, AMC, MCCQE, MRCP, and clinical study.">
+  <title>iMD App Resources Library | QBanks, Books &amp; Video Lectures</title>
+  <meta name="description" content="Browse the iMD App medical resources library: question banks, review books, video lectures, clinical and drug references for USMLE, PLAB, AMC, MCCQE and MRCP, all in one iMD subscription.">
+  <meta name="robots" content="index, follow, max-image-preview:large">
+  <meta property="og:site_name" content="iMD App">
+  <meta property="og:title" content="iMD App Resources Library | QBanks, Books &amp; Video Lectures">
+  <meta property="og:description" content="Question banks, review books, video lectures, clinical and drug references for USMLE, PLAB, AMC, MCCQE and MRCP, all in one iMD subscription.">
   <meta property="og:type" content="website">
   <meta property="og:image" content="https://www.imdapp.org/images/logo.png">
+  <meta property="og:image:width" content="1024">
+  <meta property="og:image:height" content="1012">
+  <meta property="og:image:alt" content="iMD App logo">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.imdapp.org/" },
+      { "@type": "ListItem", "position": 2, "name": "Resources", "item": "https://www.imdapp.org/resources.html" }
+    ]
+  }
+  </script>
   <link rel="icon" href="images/logo.png" type="image/png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -27,8 +41,8 @@
   <link rel="canonical" href="https://www.imdapp.org/resources.html">
   <meta property="og:url" content="https://www.imdapp.org/resources.html">
   <meta name="twitter:card" content="summary">
-  <meta name="twitter:title" content="iMD Resources | Medical Study Library">
-  <meta name="twitter:description" content="Browse iMD's medical resource library, with materials for USMLE, PLAB, AMC, MCCQE, MRCP, and clinical study.">
+  <meta name="twitter:title" content="iMD App Resources Library | QBanks, Books &amp; Video Lectures">
+  <meta name="twitter:description" content="Question banks, review books, video lectures, clinical and drug references for USMLE, PLAB, AMC, MCCQE and MRCP, all in one iMD subscription.">
   <meta name="twitter:image" content="https://www.imdapp.org/images/logo.png">
 </head>
 <body>
@@ -65,16 +79,16 @@
   <main id="main">
     <section class="page-hero">
       <div class="container">
-        <h1 class="page-hero__title">Medical Resource Library</h1>
-        <p class="page-hero__text">Browse iMD medical resources for exam preparation and clinical learning. Explore <a href="exams.html">exam categories</a>, read the <a href="download.html">download and installation guide</a>, or compare <a href="pricing.html">subscription plans</a>.</p>
+        <h1 class="page-hero__title">iMD App Medical Resources Library</h1>
+        <p class="page-hero__text">The iMD App gives one subscription access to 45,000+ medical resources: question banks, review books, video lectures, clinical references and drug databases for USMLE, PLAB, AMC, MCCQE, MRCP and everyday clinical practice. The categories below show how the library is organized. Explore <a href="exams.html">exam categories</a>, read the <a href="download.html">iMD App download guide</a>, or compare <a href="pricing.html">iMD App prices</a>.</p>
       </div>
     </section>
 
     <section class="section section--tight">
       <div class="container">
         <div class="section-heading">
-          <h2>Search the iMD resources library</h2>
-          <p>Search by title or filter the study materials by exam category and resource type.</p>
+          <h2>Search the iMD App resources library</h2>
+          <p>Search by title or filter the study materials by exam (USMLE, PLAB, AMC, MCCQE, MRCP) and by resource type (QBanks, books, videos, clinical references).</p>
         </div>
         <div class="filters" role="search" aria-label="Filter resources">
           <div class="filters__search">
@@ -112,7 +126,113 @@
         </div>
 
         <div id="resource-grid" class="resource-grid" aria-live="polite">
-          <div class="resource-empty"><p>Loading resources…</p></div>
+          <article class="card resource-card">
+            <div class="resource-card__meta"><span class="tag tag--category">USMLE</span><span class="tag">Question Banks</span></div>
+            <h3 class="card__title">USMLE Step 1, Step 2 CK &amp; Step 3 Question Banks</h3>
+            <p class="card__text">Exam-style USMLE QBanks with detailed explanations covering basic sciences, clinical knowledge and clinical reasoning for every Step.</p>
+            <a class="card__link" href="pricing.html">Get Access</a>
+          </article>
+          <article class="card resource-card">
+            <div class="resource-card__meta"><span class="tag tag--category">USMLE</span><span class="tag">Books</span></div>
+            <h3 class="card__title">USMLE High-Yield Review Books &amp; Notes</h3>
+            <p class="card__text">Concise USMLE review books and high-yield notes organized by organ system for focused Step 1 and Step 2 CK revision.</p>
+            <a class="card__link" href="pricing.html">Get Access</a>
+          </article>
+          <article class="card resource-card">
+            <div class="resource-card__meta"><span class="tag tag--category">USMLE</span><span class="tag">Videos</span></div>
+            <h3 class="card__title">USMLE Video Lecture Series</h3>
+            <p class="card__text">High-yield video lectures for USMLE basic sciences and clinical topics, ideal for visual learners preparing for Step 1 and Step 2 CK.</p>
+            <a class="card__link" href="pricing.html">Get Access</a>
+          </article>
+          <article class="card resource-card">
+            <div class="resource-card__meta"><span class="tag tag--category">PLAB</span><span class="tag">Question Banks</span></div>
+            <h3 class="card__title">PLAB 1 Question Bank (UKMLA)</h3>
+            <p class="card__text">Single-best-answer PLAB 1 practice questions mapped to the UKMLA content map, with UK guideline-based explanations.</p>
+            <a class="card__link" href="pricing.html">Get Access</a>
+          </article>
+          <article class="card resource-card">
+            <div class="resource-card__meta"><span class="tag tag--category">PLAB</span><span class="tag">Videos</span></div>
+            <h3 class="card__title">PLAB 2 Clinical Scenarios &amp; OSCE Videos</h3>
+            <p class="card__text">Video walkthroughs of common PLAB 2 OSCE stations, clinical presentations and management approaches.</p>
+            <a class="card__link" href="pricing.html">Get Access</a>
+          </article>
+          <article class="card resource-card">
+            <div class="resource-card__meta"><span class="tag tag--category">AMC</span><span class="tag">Books</span></div>
+            <h3 class="card__title">AMC Exam Study Companion &amp; Therapeutic References</h3>
+            <p class="card__text">Structured reference material and Australian therapeutic guidance to support AMC MCQ and Clinical exam preparation.</p>
+            <a class="card__link" href="pricing.html">Get Access</a>
+          </article>
+          <article class="card resource-card">
+            <div class="resource-card__meta"><span class="tag tag--category">AMC</span><span class="tag">Question Banks</span></div>
+            <h3 class="card__title">AMC MCQ Practice Question Bank</h3>
+            <p class="card__text">AMC-style multiple-choice practice questions covering the key clinical topics tested in the Australian Medical Council MCQ exam.</p>
+            <a class="card__link" href="pricing.html">Get Access</a>
+          </article>
+          <article class="card resource-card">
+            <div class="resource-card__meta"><span class="tag tag--category">MCCQE</span><span class="tag">Question Banks</span></div>
+            <h3 class="card__title">MCCQE Part 1 Question Bank &amp; CDM Cases</h3>
+            <p class="card__text">Canadian-focused MCCQE Part 1 practice questions and clinical decision-making cases built around Medical Council of Canada objectives.</p>
+            <a class="card__link" href="pricing.html">Get Access</a>
+          </article>
+          <article class="card resource-card">
+            <div class="resource-card__meta"><span class="tag tag--category">MCCQE</span><span class="tag">Videos</span></div>
+            <h3 class="card__title">MCCQE &amp; NAC OSCE Topic Review Lectures</h3>
+            <p class="card__text">Lecture-style video reviews covering high-priority MCCQE Part 1 topics and NAC OSCE station preparation.</p>
+            <a class="card__link" href="pricing.html">Get Access</a>
+          </article>
+          <article class="card resource-card">
+            <div class="resource-card__meta"><span class="tag tag--category">MRCP</span><span class="tag">Books</span></div>
+            <h3 class="card__title">MRCP Specialty Reference Pack</h3>
+            <p class="card__text">Curated internal medicine references and guideline summaries supporting MRCP(UK) Part 1 and Part 2 revision.</p>
+            <a class="card__link" href="pricing.html">Get Access</a>
+          </article>
+          <article class="card resource-card">
+            <div class="resource-card__meta"><span class="tag tag--category">MRCP</span><span class="tag">Question Banks</span></div>
+            <h3 class="card__title">MRCP Part 1 &amp; Part 2 Question Bank</h3>
+            <p class="card__text">Exam-oriented MRCP practice questions with explanations for the Part 1 and Part 2 written papers.</p>
+            <a class="card__link" href="pricing.html">Get Access</a>
+          </article>
+          <article class="card resource-card">
+            <div class="resource-card__meta"><span class="tag tag--category">Clinical</span><span class="tag">Clinical Resources</span></div>
+            <h3 class="card__title">Clinical Guidelines &amp; Point-of-Care References</h3>
+            <p class="card__text">Condensed clinical references and guidelines for common conditions, used for bedside decision support and exam management questions.</p>
+            <a class="card__link" href="pricing.html">Get Access</a>
+          </article>
+          <article class="card resource-card">
+            <div class="resource-card__meta"><span class="tag tag--category">Clinical</span><span class="tag">Clinical Resources</span></div>
+            <h3 class="card__title">Drug Information &amp; Interaction References</h3>
+            <p class="card__text">Drug references covering dosing, interactions and therapeutics for prescribing on the wards and in pharmacology revision.</p>
+            <a class="card__link" href="pricing.html">Get Access</a>
+          </article>
+          <article class="card resource-card">
+            <div class="resource-card__meta"><span class="tag tag--category">Clinical</span><span class="tag">Videos</span></div>
+            <h3 class="card__title">Clinical Skills Demonstration Videos</h3>
+            <p class="card__text">Practical clinical skill and examination demonstrations to reinforce bedside learning and OSCE preparation.</p>
+            <a class="card__link" href="pricing.html">Get Access</a>
+          </article>
+          <article class="card resource-card">
+            <div class="resource-card__meta"><span class="tag tag--category">Books</span><span class="tag">Books</span></div>
+            <h3 class="card__title">Pharmacology Essentials Handbook</h3>
+            <p class="card__text">A compact pharmacology handbook for rapid revision of drug classes, mechanisms and adverse effects.</p>
+            <a class="card__link" href="pricing.html">Get Access</a>
+          </article>
+          <article class="card resource-card">
+            <div class="resource-card__meta"><span class="tag tag--category">Videos</span><span class="tag">Videos</span></div>
+            <h3 class="card__title">Pathology Concepts Explained</h3>
+            <p class="card__text">Clear video explanations of foundational pathology concepts for USMLE Step 1 and preclinical exam revision.</p>
+            <a class="card__link" href="pricing.html">Get Access</a>
+          </article>
+          <article class="card resource-card">
+            <div class="resource-card__meta"><span class="tag tag--category">Question Banks</span><span class="tag">Question Banks</span></div>
+            <h3 class="card__title">Mixed Specialties Drill Question Pack</h3>
+            <p class="card__text">Cross-specialty question drills in internal medicine, surgery, paediatrics, obstetrics and psychiatry to strengthen broad clinical knowledge.</p>
+            <a class="card__link" href="pricing.html">Get Access</a>
+          </article>
+        </div>
+
+        <div class="section__header" style="margin-top:3rem;">
+          <h2 class="section__title">How to get access to the iMD resources</h2>
+          <p class="section__desc">Everything in this library is included in a single iMD App subscription: <strong>$50 for 6 months, $75 for 1 year or $150 for 2 years</strong>. Pick a plan on the <a href="pricing.html">pricing page</a>, message us on WhatsApp, Telegram or email, and after payment is confirmed you receive your login details. Then follow the <a href="download.html">download guide</a> to install the iMD App on iPhone, Android, Windows or macOS.</p>
         </div>
       </div>
     </section>
@@ -126,20 +246,20 @@
             <img class="footer__logo" src="images/logo.png" width="36" height="36" loading="lazy" decoding="async" alt="">
             <span data-brand>iMD Medical Resources</span>
           </a>
-          <p class="footer__desc">A medical education resource platform helping students and professionals prepare for major exams with curated learning materials.</p>
+          <p class="footer__desc">iMD App subscriptions for USMLE, PLAB, AMC, MCCQE and MRCP preparation. iMD Medical Resources is an independent platform and is not affiliated with third-party brands.</p>
         </div>
         <div>
           <h3 class="footer__heading">Navigation</h3>
           <ul class="footer__links">
             <li><a href="/">Home</a></li>
-            <li><a href="resources.html">Resources</a></li>
-            <li><a href="exams.html">Exams</a></li>
-            <li><a href="features.html">Features</a></li>
-            <li><a href="pricing.html">Pricing</a></li>
-            <li><a href="download.html">Download &amp; Installation</a></li>
-            <li><a href="login.html">Member login help</a></li>
+            <li><a href="resources.html">iMD Resources Library</a></li>
+            <li><a href="exams.html">Exams Covered</a></li>
+            <li><a href="features.html">iMD App Features</a></li>
+            <li><a href="pricing.html">iMD App Price &amp; Plans</a></li>
+            <li><a href="download.html">Download iMD App</a></li>
+            <li><a href="login.html">iMD App Login Help</a></li>
             <li><a href="faq.html">FAQ</a></li>
-            <li><a href="contact.html">Contact</a></li>
+            <li><a href="contact.html">Contact Support</a></li>
           </ul>
         </div>
         <div>

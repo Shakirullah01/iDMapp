@@ -10,7 +10,7 @@ const SITE_CONFIG = {
 
   /* Configured support channels used by site contact links */
   WHATSAPP_NUMBER: "+923135025985",
-  TELEGRAM_USERNAME: "iMDapp_official",
+  TELEGRAM_USERNAME: "IMD_official1",
   CONTACT_EMAIL: "info@imedicaldoctor.com",
 
   /* Pricing display — change these strings anytime */
@@ -226,6 +226,18 @@ function applyPrices() {
   document.querySelectorAll("[data-price='twoYears']").forEach((el) => {
     el.textContent = SITE_CONFIG.PRICES.twoYears;
   });
+
+  /* Per-month cost, derived from the configured plan price */
+  document.querySelectorAll("[data-price-month]").forEach((el) => {
+    const key = el.getAttribute("data-price-month");
+    const months = parseInt(el.getAttribute("data-months"), 10);
+    const raw = SITE_CONFIG.PRICES[key];
+    if (!raw || !months) return;
+    const amount = parseFloat(String(raw).replace(/[^0-9.]/g, ""));
+    if (!isFinite(amount)) return;
+    const symbol = String(raw).replace(/[0-9.,\s]/g, "") || "$";
+    el.textContent = `${symbol}${(amount / months).toFixed(2)}`;
+  });
 }
 
 function initFloatingWhatsApp() {
@@ -383,10 +395,7 @@ async function initResources() {
     const data = await response.json();
     allResources = data.resources || [];
   } catch (err) {
-    grid.innerHTML = `
-      <div class="resource-empty">
-        <p>Unable to load resources. Please check <code>data/resources.json</code>.</p>
-      </div>`;
+    /* Keep the statically rendered cards if the JSON cannot be fetched */
     console.error(err);
     return;
   }
